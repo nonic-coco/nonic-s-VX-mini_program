@@ -1,0 +1,14 @@
+/* components/itemCard/itemCard.wxss */
+.card-swiper {
+  width: 600rpx; 
+  height: 600rpx;
+  left: 50%;
+  position: absolute;
+  margin-left: -300rpx;
+  box-sizing: border-box;
+  background-color: gainsboro;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.62), 0 0 60px rgba(0, 0, 0, 0.06) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.62), 0 0 40px rgba(0, 0, 0, 0.06) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.62), 0 0 40px rgba(0, 0, 0, 0.06) inset;
+  border-radius: 12px;
+ }

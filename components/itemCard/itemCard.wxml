@@ -1,0 +1,4 @@
+<!--components/itemCard/itemCard.wxml-->
+<view class="card-swiper">
+
+</view>

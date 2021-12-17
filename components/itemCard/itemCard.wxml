@@ -1,4 +1,7 @@
 <!--components/itemCard/itemCard.wxml-->
-<view class="card-swiper">
-
+<view class="tipbar">
+  <view class="tiptext">左右滑动卡片~</view>
+</view>
+<view class="card-swiper" animation="{{animationData1}}" bindtouchstart="touchstart1" bindtouchend="touchend1">
+  <view class="inner-text">{{innertext}}</view>
 </view>

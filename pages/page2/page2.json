@@ -1,5 +1,7 @@
 {
   "navigationBarTitleText": "随机一个大冒险",
   "navigationBarBackgroundColor": "#abc",
-  "usingComponents": {}
+  "usingComponents": {
+    "itemCard": "../../components/itemCard/itemCard"
+  }
 }

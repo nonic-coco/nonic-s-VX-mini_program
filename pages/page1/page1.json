@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "随机一个真心话",
+  "navigationBarBackgroundColor": "#abc",
+  "usingComponents": {
+    "itemCard": "../../components/itemCard/itemCard"
+  }
+}

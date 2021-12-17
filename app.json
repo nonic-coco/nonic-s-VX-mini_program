@@ -1,0 +1,32 @@
+{
+  "pages": [
+    "pages/page1/page1",
+    "pages/page2/page2"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#000",
+    "borderStyle": "black",
+    "backgroundColor": "#abc",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/page1/page1",
+        "text": "真心话"
+      },
+      {
+        "pagePath": "pages/page2/page2",
+        "text": "大冒险"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

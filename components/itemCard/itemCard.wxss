@@ -1,14 +1,54 @@
 /* components/itemCard/itemCard.wxss */
+/* pages/page1/page1.wxss */
+page{
+  background-color: rgba(185, 221, 119, 0.103);
+}
+.tipbar{
+  position:absolute;
+  width: 600rpx;
+  height: 16%rpx;
+  left: 50%;
+  margin-left: -300rpx;
+  margin-top: 10%;
+  align-content: center;
+  background-color: rgba(100, 148, 237, 0.527);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.62), 0 0 40px rgba(0, 0, 0, 0.06) inset;
+  border-radius: 12px;
+}
+.tiptext{
+  width: 600rpx;
+  height: 10%;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  margin-left: 180rpx;
+  display: flex;
+  position: relative;
+  text-align: center;
+  color: rgba(255, 254, 236, 0.863);
+}
+
 .card-swiper {
   width: 600rpx; 
-  height: 600rpx;
+  height: 700rpx;
   left: 50%;
   position: absolute;
   margin-left: -300rpx;
+  top: 50%;
+  margin-top: -350rpx;
   box-sizing: border-box;
-  background-color: gainsboro;
+  background-color: rgba(245, 123, 123, 0.274);
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.62), 0 0 60px rgba(0, 0, 0, 0.06) inset;
   -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.62), 0 0 40px rgba(0, 0, 0, 0.06) inset;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.62), 0 0 40px rgba(0, 0, 0, 0.06) inset;
   border-radius: 12px;
+ }
+
+ .inner-text{
+  position: absolute;
+  left: 20rpx;
+  top: 20rpx;
+  padding: 5rpx; 
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  color: rgba(175, 90, 245, 0.829);
  }

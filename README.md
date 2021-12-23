@@ -1,4 +1,3 @@
 # nonic-s-VX-mini_program
-陈先生课的课程作业
 
-----乱git出了另一个branch。。。
+两个页面分别在 pages/page1  和 pages/page2 路径之下。

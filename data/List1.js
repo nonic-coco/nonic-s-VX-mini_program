@@ -1,14 +1,17 @@
-// pages/page1/page1.js
-// import List from "../../data/List1"
 
-const { firstlist } = require("../../data/List1");
 
-let touchDotX = 0; //X按下时坐标
-let touchDotY = 0; //y按下时坐标
-// 60项
-let page1list = {
-"list": 
-[
+var json = [
+  {
+    id: 1,
+    text: "text1",
+  },
+  {
+    id: 2,
+    text: "text2",
+  }
+]
+
+let page1list = [
   {
     "id": 1,
     "text": "如果看到自己最爱的人熟睡在你面前你会做什么?",
@@ -309,78 +312,195 @@ let page1list = {
     "text": "从小到大对几个人产生过恋爱方面的喜欢？?",
     "name": "nonic",
   },
-],
+]
+
+
+let page2list = [
+  {
+    "id": 1,
+    "text": "逐个夸一夸在座的异性，要根据对方的特点来。",
+    "name": "nonic"
+  },
+  {
+    "id": 2,
+    "text": "挑在座的一位，说一说ta做过让你印象最深的事。",
+    "name": "nonic"
+  },
+  {
+    "id": 3,
+    "text": "请声情并茂地朗读以下语句：哼！都怪你！也不哄哄人家 (｡•ˇ‸ˇ•｡)人家超想哭的，捶你胸口，大坏蛋!!!(￣^￣)ゞ咩QAQ 捶你胸口！你好讨厌!(=ﾟωﾟ)ﾉ要抱抱~嘤嘤嘤……哼，人家拿小拳拳捶你胸口!!!(｡• ︿•̀｡)大坏蛋，打死你(つд⊂)",
+    "name": "nonic"
+  },
+  {
+    "id": 4,
+    "text": "挑在座的一位和你一起演一段戏，到让其他人看出来你们演的是什么为止。",
+    "name": "nonic"
+  },
+  {
+    "id": 5,
+    "text": "用卷纸缠头缠成阿拉丁的模样，一直到游戏结束。?",
+    "name": "nonic"
+  },
+  {
+    "id": 6,
+    "text": "亲一下在座一位同性，任何部位都可以。",
+    "name": "nonic"
+  },
+  {
+    "id": 7,
+    "text": "选择在座的一位公主抱",
+    "name": "nonic"
+  },
+  {
+    "id": 8,
+    "text": "外放打电话给列表一位异性，说自己喝醉了",
+    "name": "nonic"
+  },
+  {
+    "id": 9,
+    "text": "蒙眼（没有条件就闭眼）后随机和在座一位握手，猜中对方身份即为过关，如失败则听对方指令做一件事",
+    "name": "nonic"
+  },
+  {
+    "id": 10,
+    "text": "其他玩家用方言任意说一句话，你来模仿。",
+    "name": "nonic"
+  },
+  {
+    "id": 11,
+    "text": "用萝莉音念出《巴啦啦小魔仙》美琪美雪的咒语：巴啦啦能量—沙罗沙罗—小魔仙—全身变",
+    "name": "nonic"
+  },
+  {
+    "id": 12,
+    "text": "发语音说唱以下散装rap：This time I'm in the 真香，I'm玩ing大冒险 I’m玩ing真心话 ",
+    "name": "nonic"
+  },
+  {
+    "id": 13,
+    "text": "把抖音/快手的喜欢列表截图发出来",
+    "name": "nonic"
+  },
+  {
+    "id": 14,
+    "text": "给一位异性朋友发消息：你摸摸我的衣服，看我是不是做你男/女朋友的料子。",
+    "name": "nonic"
+  },
+  {
+    "id": 15,
+    "text": "对着在场的一位异性唱一段情歌",
+    "name": "nonic"
+  },
+  {
+    "id": 16,
+    "text": "对着一位异性，模仿洪世贤说一句“你好骚啊。",
+    "name": "nonic"
+  },
+  {
+    "id": 17,
+    "text": "找三个异性好友，一个个问“我美/帅吗？”等回复，截图发出来",
+    "name": "nonic"
+  },
+  {
+    "id": 18,
+    "text": "用纸巾当围巾，围在脖子",
+    "name": "nonic"
+  },
+  {
+    "id": 19,
+    "text": "在厕所门口站着，进去一位说一次欢迎光临",
+    "name": "nonic"
+  },
+  {
+    "id": 20,
+    "text": "对着垃圾桶大笑十秒",
+    "name": "nonic"
+  },
+  {
+    "id": 21,
+    "text": "拍摄卖萌小视频发朋友圈",
+    "name": "nonic"
+  },
+  {
+    "id": 22,
+    "text": "把自己的昵称改成“我变秃了也变强了”保持一天",
+    "name": "nonic"
+  },
+  {
+    "id": 23,
+    "text": "两个人用喝交杯酒的姿势表演刷牙",
+    "name": "nonic"
+  },
+  {
+    "id": 24,
+    "text": "发5首自己会唱的歌名，其他人指定一首，你发语音唱一段，必须唱跑调。",
+    "name": "nonic"
+  },
+  {
+    "id": 25,
+    "text": "深情地吻墙10秒",
+    "name": "nonic"
+  },
+  {
+    "id": 26,
+    "text": "抓着铁门喊“放我出去！",
+    "name": "nonic"
+  },
+  {
+    "id": 27,
+    "text": "和左边第一个异性换穿上衣",
+    "name": "nonic"
+  },
+  {
+    "id": 28,
+    "text": "和右边第一个异性关在厕所里等一轮游戏",
+    "name": "nonic"
+  },
+  {
+    "id": 29,
+    "text": "躺在床上摆pose说 饭在锅里，我在床上。",
+    "name": "nonic",
+  },
+  {
+    "id": 30,
+    "text": "对右侧第一位异性说一分钟情话",
+    "name": "nonic",
+  },
+  {
+    "id": 31,
+    "text": "选一位异性十指交扣，深情对视，朗诵骆宾王的《鹅》",
+    "name": "nonic",
+  },
+  {
+    "id": 32,
+    "text": "找一个陌生人借卫生纸",
+    "name": "nonic",
+  },
+  {
+    "id": 33,
+    "text": "单腿下跪，离你最近的异性亲他她的手",
+    "name": "nonic",
+  },
+  {
+    "id": 34,
+    "text": "抱一位离你最远的异性直到下一轮真心话大冒险结束",
+    "name": "nonic",
+  },
+  {
+    "id": 35,
+    "text": "做一个大家都满意的鬼脸",
+    "name": "nonic",
+  },
+  {
+    "id": 36,
+    "text": "含一大口水和距离最近的异性对视10秒",
+    "name": "nonic",
+  },
+]
+
+
+module.exports = {
+  firstlist: json,
+  page1list: page1list,
+  page2list: page2list
 }
-const app = getApp();
-Page({
-
-  /**
-   * 页面的初始数据
-   */
-  data: {
-    item: page1list,
-    firstlist: [],
-    innertext: 0,
-    isFront1: true,
-    animationData1: {},
-  },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-    console.log('page1 report: ');
-    console.log(page1list);
-    console.log(this.data.item);
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
-  },
-      
-},)

@@ -1,7 +1,16 @@
+<<<<<<< HEAD
 {
   "navigationBarTitleText": "随机一个大冒险",
   "navigationBarBackgroundColor": "#abc",
   "usingComponents": {
     "itemCard": "../../components/itemCard/itemCard"
   }
+=======
+{
+  "navigationBarTitleText": "随机一个大冒险",
+  "navigationBarBackgroundColor": "#abc",
+  "usingComponents": {
+    "itemCard": "../../components/itemCard/itemCard"
+  }
+>>>>>>> 0f10eeeaa1f5c7d05bd6cb5eecf9afb40f4e8abd
 }

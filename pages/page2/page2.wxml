@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 <!--pages/page2/page2.wxml-->
 <itemCard sw="1" />
+=======
+<!--pages/page2/page2.wxml-->
+<itemCard />
+>>>>>>> 0f10eeeaa1f5c7d05bd6cb5eecf9afb40f4e8abd

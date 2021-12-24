@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!--components/itemCard/itemCard.wxml-->
 <view class="tipbar">
   <view class="tiptext">左右滑动卡片~</view>
@@ -5,3 +6,12 @@
 <view class="card-swiper" animation="{{animationData1}}" bindtouchstart="touchstart1" bindtouchend="touchend1">
   <view class="inner-text">{{innertext}}</view>
 </view>
+=======
+<!--components/itemCard/itemCard.wxml-->
+<view class="tipbar">
+  <view class="tiptext">左右滑动卡片~</view>
+</view>
+<view class="card-swiper" animation="{{animationData1}}" bindtouchstart="touchstart1" bindtouchend="touchend1">
+  <view class="inner-text">{{innertext}}</view>
+</view>
+>>>>>>> 0f10eeeaa1f5c7d05bd6cb5eecf9afb40f4e8abd
